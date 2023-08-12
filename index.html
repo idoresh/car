@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car control</title>
+    <link rel="stylesheet" href="./main.css">
+    <style>
+        /* Car controller */
+        .controller {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .arrow {
+            width: 60px;
+            height: 60px;
+            background-color: #fff;
+            border-radius: 50%;
+            position: absolute;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 24px;
+            color: #000;
+        }
+
+        .arrow.up {
+            top: 0;
+            left: 70px;
+        }
+
+        .arrow.down {
+            bottom: 0;
+            left: 70px;
+        }
+
+        .arrow.left {
+            top: 70px;
+            left: 0;
+        }
+
+        .arrow.right {
+            top: 70px;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main__main-container">
+        <h1 id="main__title">Car Control</h1>
+        <div id="main__video-container">
+            <div id="main__video-border"></div>
+            <div id="main__video-overlay"></div>
+            <div id="main__video-border2"></div>
+            <div id="main__video-overlay2"></div>
+            <video id="main__video" playsinline autoplay loop>Can't load video :(</video>
+        </div>
+        <div id="main__text"></div>
+        <div class="controller">
+            <div class="arrow up">F</div>
+            <div class="arrow down">B</div>
+            <div class="arrow left">L</div>
+            <div class="arrow right">R</div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+
+
+</html>
